@@ -3,7 +3,11 @@
 
 [[projects]]
   name = "github.com/RobotsAndPencils/buford"
-  packages = ["payload","payload/badge","push"]
+  packages = [
+    "payload",
+    "payload/badge",
+    "push"
+  ]
   revision = "1589c179b764ddceb204a439d9bf366f04c55f9b"
   version = "v0.12.0"
 
@@ -27,7 +31,13 @@
 
 [[projects]]
   name = "github.com/go-kit/kit"
-  packages = ["endpoint","log","log/level","metrics","transport/http"]
+  packages = [
+    "endpoint",
+    "log",
+    "log/level",
+    "metrics",
+    "transport/http"
+  ]
   revision = "4dc7be5d2d12881735283bcab7352178e190fc71"
   version = "v0.6.0"
 
@@ -70,7 +80,10 @@
 [[projects]]
   branch = "master"
   name = "github.com/groob/finalizer"
-  packages = [".","logutil"]
+  packages = [
+    ".",
+    "logutil"
+  ]
   revision = "4c2ed49aabdaa038f247d72d183e410757cdbe9c"
 
 [[projects]]
@@ -94,7 +107,11 @@
 [[projects]]
   branch = "master"
   name = "github.com/micromdm/go4"
-  packages = ["env","httputil","version"]
+  packages = [
+    "env",
+    "httputil",
+    "version"
+  ]
   revision = "486ea5f130c78a9c058374eb159df08296caea9d"
 
 [[projects]]
@@ -104,8 +121,65 @@
   revision = "adf70a87d7cc97f2dacd68033b8633611b57a569"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/micromdm/micromdm"
+  packages = [
+    "dep/depsync",
+    "dep/depsync/internal/depsyncproto",
+    "mdm/appmanifest",
+    "mdm/checkin",
+    "mdm/checkin/internal/checkinproto",
+    "mdm/connect",
+    "mdm/connect/internal/connectproto",
+    "mdm/enroll",
+    "pkg/crypto",
+    "pkg/crypto/mdmcertutil",
+    "pkg/crypto/password",
+    "pkg/httputil",
+    "platform/apns",
+    "platform/apns/builtin",
+    "platform/apns/internal/pushproto",
+    "platform/appstore",
+    "platform/appstore/builtin",
+    "platform/blueprint",
+    "platform/blueprint/builtin",
+    "platform/blueprint/internal/blueprintproto",
+    "platform/command",
+    "platform/command/internal/commandproto",
+    "platform/config",
+    "platform/config/builtin",
+    "platform/config/internal/configproto",
+    "platform/dep",
+    "platform/device",
+    "platform/device/builtin",
+    "platform/device/internal/deviceproto",
+    "platform/profile",
+    "platform/profile/builtin",
+    "platform/profile/internal/profileproto",
+    "platform/pubsub",
+    "platform/pubsub/inmem",
+    "platform/queue",
+    "platform/queue/internal/commandqueuedproto",
+    "platform/queue/internal/devicecommandproto",
+    "platform/remove",
+    "platform/remove/builtin",
+    "platform/remove/internal/removeproto",
+    "platform/user",
+    "platform/user/builtin",
+    "platform/user/internal/userproto",
+    "workflow/webhook"
+  ]
+  revision = "979f32be439d2f61c88c3ccce601fca861861926"
+
+[[projects]]
   name = "github.com/micromdm/scep"
-  packages = ["depot","depot/bolt","scep","scep/internal/pkcs7","server"]
+  packages = [
+    "depot",
+    "depot/bolt",
+    "scep",
+    "scep/internal/pkcs7",
+    "server"
+  ]
   revision = "a202afd5e358b857c95d048fc47432759db0d9bd"
   version = "v1.0.0"
 
@@ -124,13 +198,25 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert","pkcs12","pkcs12/internal/rc2"]
+  packages = [
+    "acme",
+    "acme/autocert",
+    "pbkdf2",
+    "pkcs12",
+    "pkcs12/internal/rc2"
+  ]
   revision = "9419663f5a44be8b34ca85f08abc5fe1be11f8a3"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = ["context","http2","http2/hpack","idna","lex/httplex"]
+  packages = [
+    "context",
+    "http2",
+    "http2/hpack",
+    "idna",
+    "lex/httplex"
+  ]
   revision = "a04bdaca5b32abe1c069418fb7088ae607de5bd0"
 
 [[projects]]
@@ -142,18 +228,36 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/text"
-  packages = ["collate","collate/build","internal/colltab","internal/gen","internal/tag","internal/triegen","internal/ucd","language","secure/bidirule","transform","unicode/bidi","unicode/cldr","unicode/norm","unicode/rangetable"]
+  packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
+    "internal/gen",
+    "internal/tag",
+    "internal/triegen",
+    "internal/ucd",
+    "language",
+    "secure/bidirule",
+    "transform",
+    "unicode/bidi",
+    "unicode/cldr",
+    "unicode/norm",
+    "unicode/rangetable"
+  ]
   revision = "c01e4764d870b77f8abe5096ee19ad20d80e8075"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/tools"
-  packages = ["go/ast/astutil","imports"]
+  packages = [
+    "go/ast/astutil",
+    "imports"
+  ]
   revision = "9bd2f442688b66c5289262d70f537c2ecf81d7de"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "783379f631fb5da2104405d76a8db595f3d54e4ee66d4181e0213303a3d84342"
+  inputs-digest = "4a92ff666b1a104049139b206e1e00400f98873220986c614386a91d47c27cdf"
   solver-name = "gps-cdcl"
   solver-version = 1
