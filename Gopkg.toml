@@ -2,6 +2,7 @@
 [metadata.heroku]
   root-package = "github.com/arnoldusantonius/micromdm/cmd/micromdm"
   go-version = "go1.9.3"
+  install = "./cmd/..."
 
 [[constraint]]
   name = "github.com/boltdb/bolt"
