@@ -1,4 +1,8 @@
 
+[metadata.heroku]
+  root-package = "github.com/arnoldusantonius/micromdm"
+  go-version = "go1.9.3"
+
 [[constraint]]
   name = "github.com/boltdb/bolt"
   version = "v1.3.0"
