@@ -1,6 +1,6 @@
 
 [metadata.heroku]
-  root-package = "github.com/arnoldusantonius/micromdm"
+  root-package = "github.com/arnoldusantonius/micromdm/cmd/micromdm"
   go-version = "go1.9.3"
 
 [[constraint]]
