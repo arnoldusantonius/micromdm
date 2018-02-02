@@ -22,22 +22,23 @@ func main() {
 
 	if len(os.Args) < 2 {
 		run = serve
-	}
-	
-	switch strings.ToLower(os.Args[1]) {
-	case "version", "-version":
-		version.Print()
-		return
-	case "serve":
-		run = serve
-	default:
-		usage()
-		os.Exit(1)
-	}
+	} else
+	{
+		switch strings.ToLower(os.Args[1]) {
+		case "version", "-version":
+			version.Print()
+			return
+		case "serve":
+			run = serve
+		default:
+			usage()
+			os.Exit(1)
+		}
 
-	if err := run(os.Args[2:]); err != nil {
-		fmt.Fprintf(os.Stderr, "%v\n", err)
-		os.Exit(1)
+		if err := run(os.Args[2:]); err != nil {
+			fmt.Fprintf(os.Stderr, "%v\n", err)
+			os.Exit(1)
+		}
 	}
 }
 
