@@ -87,10 +87,12 @@ const homePage = `<!doctype html>
 `
 
 func serve(args []string) error {
+	http_addr:=Getenv("HTTP-ADDR")
+
 	flagset := flag.NewFlagSet("serve", flag.ExitOnError)
 	var (
 		flConfigPath        = flagset.String("config-path", "/var/db/micromdm", "path to configuration directory")
-		flServerURL         = flagset.String("server-url", "", "public HTTPS url of your server")
+		flServerURL         = flagset.String("server-url", http_addr, "public HTTPS url of your server")
 		flAPIKey            = flagset.String("api-key", env.String("MICROMDM_API_KEY", ""), "API Token for mdmctl command")
 		flAPNSCertPath      = flagset.String("apns-cert", "", "path to APNS certificate")
 		flAPNSKeyPass       = flagset.String("apns-password", env.String("MICROMDM_APNS_KEY_PASSWORD", ""), "password for your p12 APNS cert file (if using)")

@@ -18,8 +18,7 @@ func init() {
 
 func main() {
 	if len(os.Args) < 2 {
-		usage()
-		os.Exit(1)
+		run = serve
 	}
 	var run func([]string) error
 	switch strings.ToLower(os.Args[1]) {
