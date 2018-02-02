@@ -17,10 +17,13 @@ func init() {
 }
 
 func main() {
+	
+	var run func([]string) error
+
 	if len(os.Args) < 2 {
 		run = serve
 	}
-	var run func([]string) error
+	
 	switch strings.ToLower(os.Args[1]) {
 	case "version", "-version":
 		version.Print()

@@ -17,7 +17,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"time"
+	"time"	
 
 	"github.com/RobotsAndPencils/buford/push"
 	"github.com/boltdb/bolt"
@@ -87,7 +87,7 @@ const homePage = `<!doctype html>
 `
 
 func serve(args []string) error {
-	http_addr:=Getenv("HTTP-ADDR")
+	http_addr:=os.Getenv("HTTP-ADDR")
 
 	flagset := flag.NewFlagSet("serve", flag.ExitOnError)
 	var (
